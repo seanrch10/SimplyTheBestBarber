@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Simply The Best Barbers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="https://i.ibb.co/RTQsYt8b/Chat-GPT-Image-Apr-5-2025-12-19-45-PM.png" alt="Simply The Best Logo">
+        </a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="prices.html">Price List</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>We're here to assist you. Reach out to us through any of the methods below.</p>
+  </section>
+
+  <section class="contact-info">
+    <div class="container">
+      <div class="info-item">
+        <h2>Address</h2>
+        <p>6 Cumberland St, Dun Laoghaire, Dublin</p>
+      </div>
+      <div class="info-item">
+        <h2>Phone</h2>
+        <p><a href="tel:+353894373411">+353 89 437 3411</a></p>
+      </div>            
+      <div class="info-item">
+        <h2>Email</h2>
+        <p><a href="mailto:info@simplythebestbarbers.ie">info@simplythebestbarbers.ie</a></p>
+      </div>
+      <div class="info-item">
+        <h2>Follow Us</h2>
+        <p>
+          <a href="https://www.instagram.com/simplythebestbarberdunlaoighre/?locale=en-GB" target="_blank">
+            <i class="fab fa-instagram"></i> @simplythebestbarberdunlaoighre
+          </a>
+        </p>
+      </div>      
+    </div>
+  </section>
+
+  <section class="map">
+    <div class="container">
+      <h2>Find Us Here</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.4407952025786!2d-6.136934084081643!3d53.29314017996496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486709e3d274d0a5%3A0x7ce4d9e5a0d99cb4!2sSimply%20The%20Best%20Barber!5e0!3m2!1sen!2sie!4v1712325122002!5m2!1sen!2sie" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>      
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Simply The Best Barbers. All rights reserved.</p>
+    <p>Website design by H&H Media Design</p>
+  </footer>  
+
+  <!-- Hamburger Toggle Script -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+

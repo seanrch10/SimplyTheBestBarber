@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+/* Desktop Nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d4af37;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+/* Hero Section */
+.price-hero {
+  background: linear-gradient(to bottom right, #111, #222);
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.price-hero h1 {
+  font-size: 3rem;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.price-hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Price List */
+.price-list-section {
+  background-color: #111;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prices {
+  flex: 1;
+}
+
+.prices h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.prices ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+  color: #eee;
+  font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-nav {
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .price-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .price-hero p {
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prices ul li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .prices ul li span {
+    display: block;
+    margin: 4px 0;
+  }
+}
