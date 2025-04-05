@@ -261,18 +261,6 @@ footer p {
 
 @media (max-width: 768px) {
 
-  .nav-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .right-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
   .menu-toggle {
     display: block;
     font-size: 26px;
