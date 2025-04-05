@@ -280,16 +280,16 @@ footer p {
     cursor: pointer;
   }
 
-nav {
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
 }
 
-nav.active {
-  max-height: 300px; /* Adjust as needed */
+.right-nav {
+  margin-left: auto;
 }
 
   nav ul {
