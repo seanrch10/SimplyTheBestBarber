@@ -280,15 +280,21 @@ footer p {
     cursor: pointer;
   }
 
-  nav {
-    display: none;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-  }
+nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 9;
+}
 
-  nav.active {
-    display: block;
-  }
+nav.active {
+  max-height: 300px; /* adjust based on content */
+}
 
   nav ul {
     flex-direction: column;
