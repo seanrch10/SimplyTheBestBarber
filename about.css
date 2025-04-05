@@ -33,7 +33,7 @@ header {
 }
 
 .logo img {
-  height: 100px;
+  height: 150px;
   width: auto;
 }
 
@@ -231,7 +231,7 @@ footer p {
   }
 
   .logo img {
-    height: 80px;
+    height: 120px;
   }
 
   .about-hero-text h1 {
