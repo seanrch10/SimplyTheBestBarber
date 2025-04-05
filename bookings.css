@@ -145,6 +145,7 @@ footer p {
     overflow-x: auto;
     gap: 15px;
     font-size: 0.85rem;
+    justify-content: center;
   }
 
   .nav-links li a {
