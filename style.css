@@ -27,40 +27,34 @@ header {
   width: 100%;
 }
 
-.right-nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
 .logo img {
-  height: 150px;
+  height: 100px;
   width: auto;
 }
 
-/* Desktop Nav */
-nav ul {
-  list-style: none;
+.nav-links {
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
-nav ul li a {
+.nav-links li a {
   text-decoration: none;
   color: white;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
   color: #d4af37;
 }
 
 .menu-toggle {
   display: none;
-  font-size: 26px;
+  font-size: 28px;
   color: white;
   cursor: pointer;
+  margin-left: auto;
 }
 
 /* Hero Section */
@@ -259,43 +253,26 @@ footer p {
   color: #ccc;
 }
 
+/* MOBILE NAV STYLES */
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 
   .menu-toggle {
     display: block;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
   }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  width: 100%;
-}
-
-.right-nav {
-  margin-left: auto;
-}
-
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 0;
-    gap: 10px;
-  }
-
-  nav ul li {
-    padding: 10px 0;
-  }
-
-  .logo img {
-    height: 100px;
-  }
-
-  /* Hero section */
   .hero-content h1 {
     font-size: 2.4rem;
   }
@@ -309,19 +286,30 @@ footer p {
     font-size: 1rem;
   }
 
-  /* Services */
   .services-content {
     flex-direction: column;
   }
 
-  /* Testimonials */
   .testimonial-slide {
     font-size: 1rem;
   }
 
-  /* Footer adjustments (optional for mobile spacing) */
   footer {
     font-size: 13px;
   }
 }
 
+/* DESKTOP OVERRIDES */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
