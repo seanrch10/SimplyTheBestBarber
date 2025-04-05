@@ -230,3 +230,12 @@ footer p {
   }
 }
 
+.image-column img,
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* or use cover if cropping is preferred */
+  max-height: 400px; /* optional: prevents overly tall images */
+}
+
+
