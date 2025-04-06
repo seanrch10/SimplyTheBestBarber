@@ -118,49 +118,25 @@ nav ul li a:hover {
   color: #ccc;
 }
 
-/* Jamie feature */
-.jamie-feature {
-  padding: 60px 20px;
-  background-color: #fff;
-  color: #111;
+.jamie-section {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.jamie-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-}
-
-.jamie-text {
-  flex: 1 1 500px;
-}
-
-.jamie-text h3 {
+.jamie-section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #111;
-}
-
-.jamie-text p {
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.jamie-image {
-  flex: 1 1 500px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 20px; /* Reduce if needed */
+  color: #d4af37;
 }
 
 .jamie-image img {
   max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* Crew image */
