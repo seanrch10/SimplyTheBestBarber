@@ -118,26 +118,47 @@ nav ul li a:hover {
   color: #ccc;
 }
 
-.jamie-section {
-  background-color: #111;
-  color: #fff;
-  padding: 40px 20px;
+.about-hero {
+  position: relative;
+  height: 80vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.jamie-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px; /* Reduce if needed */
+.about-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 80vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
   color: #d4af37;
 }
 
-.jamie-image img {
-  max-width: 100%;
-  width: 400px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
+
+
 
 /* Crew image */
 .crew-images img {
